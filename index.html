@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Graduate Scholar – Find Your Ph.D. Destination</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#"><span class="logo">🎓</span><span>GLOBAL GRADUATE<br>SCHOLAR</span></a>
+    <nav><a href="#">HOME</a><a href="#">COUNTRIES</a><a href="#">UNIVERSITIES</a><a href="#">FUNDING</a><a href="#">RESOURCES</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>FIND YOUR PH.D. DESTINATION</h1>
+
+  <form class="search" id="searchForm" role="search">
+    <input id="q" type="search" placeholder="Search universities, programs, or countries..." aria-label="Search">
+    <button type="submit" aria-label="Search">🔍</button>
+  </form>
+
+  <div class="filters">
+    <label>COUNTRY<select id="selCountry"><option value="">Select Country...</option></select></label>
+    <label>FIELD OF STUDY<select id="selField"><option value="">Select Field...</option></select></label>
+    <label>PROGRAM START<select id="selStart"><option value="">Select Year/Term</option></select></label>
+    <button type="button" id="btnFilter" class="ghost">FILTER</button>
+  </div>
+
+  <div class="layout">
+    <aside id="sidebar">
+      <h3>Country</h3><div id="boxCountry"></div><hr>
+      <h3>University Type</h3><div id="boxType"></div><hr>
+      <h3>Field</h3><div id="boxCat"></div><hr>
+      <h3>Funding Type</h3><div id="boxFunding"></div>
+      <button type="button" id="btnReset" class="link">Clear all filters</button>
+    </aside>
+
+    <section>
+      <div class="head">
+        <h2 id="count">FOUND 0 RESULTS</h2>
+        <nav class="pager" id="pager" aria-label="Pagination"></nav>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </div>
+</main>
+
+<footer><div class="wrap">© 2026 Global Graduate Scholar | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></div></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
